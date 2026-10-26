@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hindi Quest! 🌈</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="top"><span class="brand">🌈 Hindi Quest!</span><span class="pill">LEVEL 1 · BEGINNER</span></div>
+  <div class="hero-grid"><div><p class="eyebrow">LEARN · PLAY · SHINE</p><h1>Namaste, superstar! <span>नमस्ते</span></h1><p class="intro">Your colorful adventure into Hindi starts here. Learn a little, play a little, earn stars!</p><a class="cta" href="#play">Start today's quest ✨</a></div><div class="mascot" aria-label="Cute smiling sun illustration">☀️<div class="speech">You can do it!</div><span>⭐ 🌸 🦋</span></div></div>
+</header>
+<main>
+<section class="stats" aria-label="Your progress"><div class="stat"><span>⭐</span><div><b id="stars">0</b><small>Stars earned</small></div></div><div class="stat"><span>🔥</span><div><b id="streak">0</b><small>Quests completed</small></div></div><div class="stat"><span>🎯</span><div><b id="mastery">0%</b><small>Quiz accuracy</small></div></div></section>
+<section class="section" id="play"><div class="section-head"><div><p class="eyebrow">PICK YOUR ADVENTURE</p><h2>What shall we learn today?</h2></div><span class="badge">For curious minds · Age 9+</span></div>
+<div class="cards">
+<button class="lesson-card pink" data-lesson="greetings"><span class="emoji">👋</span><span class="card-title">Hello, Hindi!</span><span class="card-sub">Greetings & kind words</span><span class="card-bottom">Explore lesson ↗</span></button>
+<button class="lesson-card blue" data-lesson="colors"><span class="emoji">🎨</span><span class="card-title">Color Carnival</span><span class="card-sub">Colors all around us</span><span class="card-bottom">Explore lesson ↗</span></button>
+<button class="lesson-card yellow" data-lesson="animals"><span class="emoji">🐯</span><span class="card-title">Animal Safari</span><span class="card-sub">Meet animal friends</span><span class="card-bottom">Explore lesson ↗</span></button>
+<button class="lesson-card green" data-lesson="numbers"><span class="emoji">🔢</span><span class="card-title">Number Ninja</span><span class="card-sub">Count in Hindi</span><span class="card-bottom">Explore lesson ↗</span></button>
+</div></section>
+<section class="lesson-panel" id="lesson-panel" hidden><div class="panel-head"><div><p class="eyebrow">MINI LESSON</p><h2 id="lesson-title">Let's learn!</h2></div><button class="close" id="close-lesson" aria-label="Close lesson">✕</button></div><div id="lesson-content" class="word-grid"></div></section>
+<section class="quiz-wrap"><div class="quiz-copy"><p class="eyebrow">BRAIN POWER</p><h2>⭐ Quick Star Quiz</h2><p>Choose the correct answer. Every try helps you learn!</p><div class="progress"><div id="progress-bar"></div></div><small id="quiz-count">Question 1 of 5</small></div><div class="quiz-card" id="quiz-card"><div class="quiz-emoji" id="quiz-emoji">👋</div><p class="question" id="question">What does “नमस्ते” mean?</p><div class="answers" id="answers"></div><p id="feedback" role="status" aria-live="polite"></p><button class="next" id="next" hidden>Next question ➜</button></div></section>
+<section class="daily"><div class="daily-icon">📅</div><div><p class="eyebrow">YOUR DAILY QUEST</p><h2>Little steps make big progress!</h2><p>Complete a lesson, try the quiz, and tell someone one new Hindi word.</p></div><button id="daily-done" class="cta">Mark quest complete ✓</button></section>
+</main><footer>Made with 💖 for little language explorers · Keep practising every day!</footer><script src="app.js"></script>
+</body></html>
